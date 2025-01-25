@@ -1,4 +1,19 @@
+# Exclude folder !old
 \!old/
+
+# Exclude folder notes
 notes/
-volumes/*/
+
+# Exclude all subfolders inside volumes except folder airflow
+volumes/*
+!volumes/airflow/
+volumes/airflow/*
+
+# Exclude file .env
 .env
+
+# Exclude all subfolders __pycache__ in all folders
+**/__pycache__/
+
+# Exclude folder .idea
+dev/.idea/
