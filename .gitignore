@@ -4,10 +4,12 @@
 # Exclude folder notes
 notes/
 
-# Exclude all subfolders inside volumes except folder airflow
+# Exclude all subfolders inside volumes except folder airflow and nifi
 volumes/*
 !volumes/airflow/
 volumes/airflow/*
+!volumes/nifi/
+volumes/nifi/*
 
 # Exclude file .env
 .env
